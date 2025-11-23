@@ -48,7 +48,7 @@ await webhook.send({
 
 ## Documentation
 
-For full documentation, visit [docs.notifs.io](https://docs.notifs.io)
+For full documentation, visit [notifs.io/docs](https://notifs.io/docs)
 
 ## Features
 

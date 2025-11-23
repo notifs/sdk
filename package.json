@@ -1,6 +1,6 @@
 {
   "name": "@notifs/sdk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Official TypeScript SDK for Notifs - webhook notifications made easy",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
