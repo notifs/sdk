@@ -1,0 +1,55 @@
+{
+  "name": "@notifs/sdk",
+  "version": "0.1.2",
+  "description": "Official TypeScript SDK for Notifs - webhook notifications made easy",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "homepage": "https://notifs.io",
+  "bugs": {
+    "url": "https://github.com/notifs/sdk/issues"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "notifs",
+    "webhook",
+    "notifications",
+    "sdk",
+    "typescript",
+    "email",
+    "push-notifications",
+    "discord",
+    "slack"
+  ],
+  "author": "Notifs <hello@notifs.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notifs/sdk"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=16"
+  }
+}
